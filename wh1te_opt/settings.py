@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g9#efv!j+3cmwmwe!)kjgi19#-z61trczkg&yl=c=jk_3!x&&='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '185.46.11.168', '2a00:f940:2:4:2::3910', '185-46-11-168.cloudvps.regruhosting.ru',
@@ -109,16 +109,16 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'django_project_db',
-#         'USER': 'django',
-#         'PASSWORD': 'ea9zohg3wei4',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django_project_db',
+        'USER': 'django',
+        'PASSWORD': 'ea9zohg3wei4',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 
 # Password validation
